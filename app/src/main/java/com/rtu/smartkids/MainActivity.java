@@ -7,17 +7,26 @@ import android.graphics.Typeface;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        try
+        {
+            this.getSupportActionBar().hide();
+        }
+        catch (NullPointerException e){}
+
         setContentView(R.layout.activity_main);
+        TextView msg = (TextView)findViewById(R.id.msg);
         Button hi = (Button)findViewById(R.id.hi);
         Button en = (Button)findViewById(R.id.en);
         Typeface custom_font = Typeface.createFromAsset(getAssets(), "GoodUnicornRegular-Rxev.ttf");
         en.setTypeface(custom_font);
+        msg.setTypeface(custom_font);
 
         Typeface custom_font_hi = Typeface.createFromAsset(getAssets(), "Devnew.ttf");
         hi.setTypeface(custom_font_hi);
