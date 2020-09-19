@@ -33,6 +33,11 @@ public class MainActivity extends AppCompatActivity {
         hi.setText("हिन्दी");
 
     }
+    public void openWritepad(View v){
+
+        Intent i = new Intent(MainActivity.this, DrawingActivity.class);
+        startActivity(i);
+    }
     public void openHindiCourse(View v){
 
         Intent i = new Intent(MainActivity.this, DetailActivity.class);

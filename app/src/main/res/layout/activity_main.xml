@@ -34,9 +34,21 @@
         android:background="@drawable/button"
         android:textColor="@color/colorAccent"
         android:textSize="30dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="20dp"
         android:layout_height="100dp"
         android:layout_below="@+id/en"
         android:layout_centerHorizontal="true"
         android:text="" />
+    <Button
+        android:onClick="openWritepad"
+        android:layout_width="250dp"
+        android:id="@+id/wp"
+        android:background="@drawable/button"
+        android:textColor="@color/colorAccent"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/hi"
+        android:layout_centerHorizontal="true"
+        android:text="Write and Learn" />
 </RelativeLayout>
